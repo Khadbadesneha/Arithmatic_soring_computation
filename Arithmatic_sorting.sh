@@ -10,4 +10,5 @@ compute[UC5]=$((a%b+c))
 for i in ${!compute[@]}; do
 echo $i ":" ${compute[$i]}
 done
-echo ${compute[@]}
+${compute[@]}
+arr=$( printf'%s'"${compute[@]}" | sort -n )
