@@ -11,4 +11,4 @@ for i in ${!compute[@]}; do
 echo $i ":" ${compute[$i]}
 done
 ${compute[@]}
-arr=$( printf'%s'"${compute[@]}" | sort -n )
+arr=$( printf'%s'"${compute[@]}" | sort -nr )
